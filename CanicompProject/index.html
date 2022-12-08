@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="icon" href="logo.png">
+    <script src="script.js"></script>
+    <title>All about Jakarta</title>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="nav "  style="box-shadow: 5px 5px 10px gray;">
+        <img id="logo" src="logoImproved.png" alt="logo grup 3">
+        <ul>
+            <a href="website.html">Home Page</a>
+            <a href="form.html">Survey Form</a>
+            <a href="index.html">Minigame</a>
+        </ul>
+    </div>
+    <!--Whack a Mole-->
+    <div class="whack">
+        <h1 class="headlineMole">Whac-a-Corruptor<h1>
+        <input type="text" id="scored" value="Score : 0" disabled>
+        <input type="text" id="time" value="Time : 10" disabled> <br>
+        <input type="text" id="lastScored" value="Last Score : " disabled>
+        <br>
+        <button style="margin-bottom: 40px; font-size: 20px; font-weight: bold;" type="button" id="start" onclick="startButton()">START</button> <br>
+        <div id="holes">
+            <button class="moleHole" type="button" id="mole1" onclick="moleClick(1)" disabled><img id="imgMole1" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button>
+            <button class="moleHole" type="button" id="mole2" onclick="moleClick(2)" disabled><img id="imgMole2" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button>
+            <button class="moleHole" type="button" id="mole3" onclick="moleClick(3)" disabled><img id="imgMole3" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button> <br>
+            <button class="moleHole" type="button" id="mole4" onclick="moleClick(4)" disabled><img id="imgMole4" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button>
+            <button class="moleHole" type="button" id="mole5" onclick="moleClick(5)" disabled><img id="imgMole5" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button>
+            <button class="moleHole" type="button" id="mole6" onclick="moleClick(6)" disabled><img id="imgMole6" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button> <br>
+            <button class="moleHole" type="button" id="mole7" onclick="moleClick(7)" disabled><img id="imgMole7" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button>
+            <button class="moleHole" type="button" id="mole8" onclick="moleClick(8)" disabled><img id="imgMole8" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button>
+            <button class="moleHole" type="button" id="mole9" onclick="moleClick(9)" disabled><img id="imgMole9" class="imgMoles" src="dirt.png" alt="dirt no mole" onclick="mole('mole.png')" draggable="false"></button>
+        </div>
+    </div>
+
+</body>
+</html>

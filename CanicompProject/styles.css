@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: rgb(79, 160, 163);
+    background-image: url('/RuangDPR.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.whack {
+    text-align: center;
+    width: 100%;
+    padding-top: 70px;
+}
+#scored {
+    border: 0px;
+    background-color: #c2905f;
+    border-radius: 5px;
+    width: 100px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: white;
+}
+#time {
+    border: 0px;
+    background-color: #c2905f;
+    border-radius: 5px;
+    width: 100px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: white;
+}
+#lastScored {
+    border: 0px;
+    background-color: #c2905f;
+    border-radius: 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: white;
+    width: 213px;
+}
+.moleHole {
+    width: 150px;
+    height: 150px;
+    border: 0px;
+    background-color: transparent;
+}
+.headlineMole {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+}
+
+.imgMoles {
+    width: 145px; 
+    margin:0px 0px 0px -5px;
+}
+
+* {
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
