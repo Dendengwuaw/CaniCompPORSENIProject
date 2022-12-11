@@ -3,7 +3,7 @@
 
 
 body {
-    background-color: rgb(79, 160, 163);
+    background-color: rgb(73, 73, 73);
 }
 
 .headline {
@@ -11,7 +11,7 @@ body {
     width: 99%;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    color: white;
     font-size: 40px;
 }
 .subheadline {
@@ -21,7 +21,7 @@ body {
     margin: -40px 10px 10px 10px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: black;
+    color: white;
     
 }
 .form {

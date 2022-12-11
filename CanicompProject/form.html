@@ -6,61 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles3.css">
     <link rel="stylesheet" href="style-nav.css">
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="logoImproved.png">
     <script src="script.js"></script>
     <title>All About Jakarta</title>
 </head>
-<body>
-    <!--Navbar-->
-    <div class="nav ">
-        <img id="logo" src="logoImproved.png" alt="logo grup 3">
-        <ul>
-            <a href="website.html">Home Page</a>
-            <a href="form.html">Survey Form</a>
-            <a href="index.html">Minigame</a>
-        </ul>
-    </div>
-    <div class="headline"><h1>Kuisioner Kepuasan Warga Jakarta</h1></div>
-    <div class="subheadline"><p>Terima kasih atas partisipasinya dalam pengisian kuisioner ini.</p></div>
-    <div class="form">
-        <p>Alamat E-mail</p>
-        <input required id="email" class="textInput" type="email" placeholder="Masukkan E-Mail anda">
-        <p>Nomor Telepon</p>
-        <input required id="telefon" class="textInput" type="tel" placeholder="Masukkan Nomor Telepon anda">
-        <p>Nama Lengkap</p>
-        <input required id="nama" class="textInput" type="text" placeholder="Masukkan Nama Lengkap">
-        <p>Tanggal Lahir</p>
-        <input required style="font-family: 'Josefin Sans', sans-serif; width: 200px;" id="tanggal" class="textInput" type="date">
-        <p>Umur Anda Saat Ini</p>
-        <input required style="width: 200px;" id="umur" class="textInput" type="number" placeholder="Masukkan Umur Anda">
-        <p>Hal yang paling anda sukai dari Jakarta</p>
-        <input required id="hobi1" class="textInput" type="text" placeholder="Hal Terfavorit nomor 1">
-        <input id="hobi2" class="textInput" type="text" placeholder="Hal Terfavorit nomor 1">
-        <input id="hobi3" class="textInput" type="text" placeholder="Hal Terfavorit nomor 3">
-        <p>Hal yang paling anda benci dari Jakarta</p>
-        <input required class="textInput" type="text" placeholder="Hal yang Paling Dibenci nomor 1" id="olahraga1">
-        <input class="textInput" type="text" placeholder="Hal yang Paling Dibenci nomor 2" id="olahraga2">
-        <input class="textInput" type="text" placeholder="Hal yang Paling Dibenci nomor 3" id="olahraga3"> <br>
-        <p>Tempat Hiburan Favorit di Jakarta</p>
-        <input required class="textInput" type="text" placeholder="Tempat Hiburan Favorit nomor 1" id="makanan1">
-        <input class="textInput" type="text" placeholder="Tempat Hiburan Favorit nomor 2" id="makanan2">
-        <input class="textInput" type="text" placeholder="Tempat Hiburan Favorit nomor 3" id="makanan3"> <br>
-        <p>Jenis Transportasi Pilihan</p>
-        <div class="radiostyles">
-            <input id="ayah" type="radio" name="keluarga"> Mobil Pribadi <br>
-            <input id="ibu" type="radio" name="keluarga"> Motor Pribadi <br>
-            <input id="kakakL" type="radio" name="keluarga"> KRL <br>
-            <input id="kakakP" type="radio" name="keluarga"> MRT dan LRT <br>
-            <input id="adikL" type="radio" name="keluarga"> Ojek Online <br>
-            <input id="adikP" type="radio" name="keluarga"> Angkot <br>
-            <input id="lainnyaKeluarga" type="radio" name="keluarga">
-            <input class="textInput" style="width: 200px;" id="textLK" type="text" placeholder="Lainnya" onchange="resetTextInputKeluarga()" onclick="resetTextInputKeluarga()">
-        </div> <br> 
-        <p>Saran untuk Jakarta Kedepannya</p>
-        <div>
-            <textarea style="height:10ch;" type="text" class="textInput" id=""></textarea>
-        </div> <br>
-        <input required style="font-size: 17px; background-color: orangered; color: black; font-weight: bold;" type="submit" value="Submit" onclick="clearInput()">
-    </div>
-</body>
+    <body>
+        <!--Navbar-->
+        <div class="nav ">
+            <img id="logo" src="logoImproved.png" alt="logo grup 3">
+            <ul>
+                <a href="website.html">Home Page</a>
+                <a href="form.html">Survey Form</a>
+                <a href="index.html">Minigame</a>
+            </ul>
+        </div>
+        <div class="whack">
+            <div class="headline"><h1>Kuisioner Kepuasan Warga Jakarta</h1></div>
+            <div class="subheadline"><p>Terima kasih atas partisipasinya dalam pengisian kuisioner ini.</p></div>
+            <div class="form">
+                <p>Alamat E-mail</p>
+                <input required id="email" class="textInput" type="email" placeholder="Masukkan E-Mail anda">
+                <p>Nomor Telepon</p>
+                <input required id="telefon" class="textInput" type="tel" placeholder="Masukkan Nomor Telepon anda">
+                <p>Nama Lengkap</p>
+                <input required id="nama" class="textInput" type="text" placeholder="Masukkan Nama Lengkap">
+                <p>Tanggal Lahir</p>
+                <input required style="font-family: 'Josefin Sans', sans-serif; width: 200px;" id="tanggal" class="textInput" type="date">
+                <p>Umur Anda Saat Ini</p>
+                <input required style="width: 200px;" id="umur" class="textInput" type="number" placeholder="Masukkan Umur Anda">
+                <p>Hal yang paling anda sukai dari Jakarta</p>
+                <input required id="hobi1" class="textInput" type="text" placeholder="Hal Terfavorit nomor 1">
+                <input id="hobi2" class="textInput" type="text" placeholder="Hal Terfavorit nomor 1">
+                <input id="hobi3" class="textInput" type="text" placeholder="Hal Terfavorit nomor 3">
+                <p>Hal yang paling anda benci dari Jakarta</p>
+                <input required class="textInput" type="text" placeholder="Hal yang Paling Dibenci nomor 1" id="olahraga1">
+                <input class="textInput" type="text" placeholder="Hal yang Paling Dibenci nomor 2" id="olahraga2">
+                <input class="textInput" type="text" placeholder="Hal yang Paling Dibenci nomor 3" id="olahraga3"> <br>
+                <p>Tempat Hiburan Favorit di Jakarta</p>
+                <input required class="textInput" type="text" placeholder="Tempat Hiburan Favorit nomor 1" id="makanan1">
+                <input class="textInput" type="text" placeholder="Tempat Hiburan Favorit nomor 2" id="makanan2">
+                <input class="textInput" type="text" placeholder="Tempat Hiburan Favorit nomor 3" id="makanan3"> <br>
+                <p>Jenis Transportasi Pilihan</p>
+                <div class="radiostyles">
+                    <input id="ayah" type="radio" name="keluarga"> Mobil Pribadi <br>
+                    <input id="ibu" type="radio" name="keluarga"> Motor Pribadi <br>
+                    <input id="kakakL" type="radio" name="keluarga"> KRL <br>
+                    <input id="kakakP" type="radio" name="keluarga"> MRT dan LRT <br>
+                    <input id="adikL" type="radio" name="keluarga"> Ojek Online <br>
+                    <input id="adikP" type="radio" name="keluarga"> Angkot <br>
+                    <input id="lainnyaKeluarga" type="radio" name="keluarga">
+                    <input class="textInput" style="width: 200px;" id="textLK" type="text" placeholder="Lainnya" onchange="resetTextInputKeluarga()" onclick="resetTextInputKeluarga()">
+                </div> <br> 
+                <p>Saran untuk Jakarta Kedepannya</p>
+                <div>
+                    <textarea style="height:10ch;" type="text" class="textInput" id=""></textarea>
+                </div> <br>
+            <input required style="font-size: 17px; background-color: orangered; color: black; font-weight: bold;" type="submit" value="Submit" onclick="clearInput()">
+            </div>
+        </div>
+    </body>
 </html>
