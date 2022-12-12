@@ -47,6 +47,17 @@ body {
     color: white;
     width: 213px;
 }
+#highScored {
+    border: 0px;
+    background-color: #c2905f;
+    border-radius: 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: white;
+    width: 213px;
+}
 .moleHole {
     width: 150px;
     height: 150px;

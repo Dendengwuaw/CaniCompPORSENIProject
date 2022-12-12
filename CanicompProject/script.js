@@ -24,6 +24,7 @@ function startCountdown(seconds) {
         counter--;
         
         if (counter < 0 ) {
+            highScore();
             lastScore();
             document.getElementById("mole1").disabled = true;
             document.getElementById("mole2").disabled = true;
@@ -75,6 +76,7 @@ function moleClick(x) {
         skor();
     }
     if(score < 0) {
+        highScore();
         lastScore();
         mole("dirt.png");
         document.getElementById("mole1").disabled = true;
@@ -103,10 +105,26 @@ while(score < 0) {
     mole("dirt.png");
 }
 
+let LS;
 function lastScore() {
-    let LS = score;
+    LS = score;
     let btn = document.getElementById("lastScored");
     btn.setAttribute("value", "Last Score : " + LS);
+}
+
+
+function highScore() {
+    if(score > LS || LS == undefined) {
+        window.name = score
+        document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
+    }
+    else {
+        document.getElementById("highScored").setAttribute("value", "High Score : " + HS);
+    }
+}
+
+function highScoreLoad() {
+    document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
 }
 
 //FORMS

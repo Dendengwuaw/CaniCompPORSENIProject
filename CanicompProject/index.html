@@ -10,7 +10,7 @@
     <script src="script.js"></script>
     <title>All about Jakarta</title>
 </head>
-<body>
+<body onload="highScoreLoad()">
     <!--Navbar-->
     <div class="nav "  style="box-shadow: 5px 5px 10px gray;">
         <img id="logo" src="logoImproved.png" alt="logo grup 3">
@@ -25,7 +25,8 @@
         <h1 class="headlineMole">Whac-a-Preman-Jakarta<h1>
         <input type="text" id="scored" value="Score : 0" disabled>
         <input type="text" id="time" value="Time : 10" disabled> <br>
-        <input type="text" id="lastScored" value="Last Score : " disabled>
+        <input type="text" id="lastScored" value="Last Score : " disabled> <br>
+        <input type="text" id="highScored" value="High Score : " disabled>
         <br>
         <button style="margin-bottom: 40px; font-size: 20px; font-weight: bold;" type="button" id="start" onclick="startButton()">START</button> <br>
         <div id="holes">
