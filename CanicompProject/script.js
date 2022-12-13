@@ -77,6 +77,7 @@ function moleClick(x) {
     }
     if(score < 0) {
         highScore();
+        score = 0;
         lastScore();
         mole("dirt.png");
         document.getElementById("mole1").disabled = true;
@@ -88,7 +89,7 @@ function moleClick(x) {
         document.getElementById("mole7").disabled = true;
         document.getElementById("mole8").disabled = true;
         document.getElementById("mole9").disabled = true;
-        score = 0;
+        
         skor();
         document.getElementById("start").disabled = false;
         document.getElementById("time").setAttribute("value", "TIME'S UP!");
@@ -112,21 +113,22 @@ function lastScore() {
     btn.setAttribute("value", "Last Score : " + LS);
 }
 
-
+let HS = parseFloat(window.name);
 function highScore() {
-    if(score > LS || LS == undefined || score > window.name) {
+    if(score > LS || LS == undefined || score > parseFloat(window.name)) {
         window.name = score
-        document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
+        
+        document.getElementById("highScored").setAttribute("value", "High Score : " + parseFloat(window.name));
     }
     else {
-        document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
+        document.getElementById("highScored").setAttribute("value", "High Score : " + parseFloat(window.name));
     }
 }
 
 if(score < 0) {
     highScore();
-    score = 0;
     lastScore();
+    score = 0;
     mole("dirt.png");
     document.getElementById("mole1").disabled = true;
     document.getElementById("mole2").disabled = true;
@@ -137,6 +139,7 @@ if(score < 0) {
     document.getElementById("mole7").disabled = true;
     document.getElementById("mole8").disabled = true;
     document.getElementById("mole9").disabled = true;
+    
     skor();
     document.getElementById("start").disabled = false;
     document.getElementById("time").setAttribute("value", "TIME'S UP!");
