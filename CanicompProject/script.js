@@ -114,7 +114,7 @@ function lastScore() {
 
 
 function highScore() {
-    if(score > LS || LS == undefined) {
+    if(score > LS || LS == undefined || score > window.name) {
         window.name = score
         document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
     }
@@ -125,6 +125,46 @@ function highScore() {
 
 function highScoreLoad() {
     document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
+}
+
+if(score < 0) {
+    highScore();
+    lastScore();
+    mole("dirt.png");
+    document.getElementById("mole1").disabled = true;
+    document.getElementById("mole2").disabled = true;
+    document.getElementById("mole3").disabled = true;
+    document.getElementById("mole4").disabled = true;
+    document.getElementById("mole5").disabled = true;
+    document.getElementById("mole6").disabled = true;
+    document.getElementById("mole7").disabled = true;
+    document.getElementById("mole8").disabled = true;
+    document.getElementById("mole9").disabled = true;
+    score = 0;
+    skor();
+    document.getElementById("start").disabled = false;
+    document.getElementById("time").setAttribute("value", "TIME'S UP!");
+    counter = 0;
+}
+
+if (counter < 0 ) {
+    highScore();
+    lastScore();
+    document.getElementById("mole1").disabled = true;
+    document.getElementById("mole2").disabled = true;
+    document.getElementById("mole3").disabled = true;
+    document.getElementById("mole4").disabled = true;
+    document.getElementById("mole5").disabled = true;
+    document.getElementById("mole6").disabled = true;
+    document.getElementById("mole7").disabled = true;
+    document.getElementById("mole8").disabled = true;
+    document.getElementById("mole9").disabled = true;
+    score = -1;
+    skor();
+    document.getElementById("start").disabled = false;
+    clearInterval(interval);
+    document.getElementById("time").setAttribute("value", "TIME'S UP!");
+    document.getElementById("scored").setAttribute("value", "Score: 0");
 }
 
 //FORMS
