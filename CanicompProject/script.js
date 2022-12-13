@@ -119,16 +119,13 @@ function highScore() {
         document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
     }
     else {
-        document.getElementById("highScored").setAttribute("value", "High Score : " + HS);
+        document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
     }
-}
-
-function highScoreLoad() {
-    document.getElementById("highScored").setAttribute("value", "High Score : " + window.name);
 }
 
 if(score < 0) {
     highScore();
+    score = 0;
     lastScore();
     mole("dirt.png");
     document.getElementById("mole1").disabled = true;
@@ -140,7 +137,6 @@ if(score < 0) {
     document.getElementById("mole7").disabled = true;
     document.getElementById("mole8").disabled = true;
     document.getElementById("mole9").disabled = true;
-    score = 0;
     skor();
     document.getElementById("start").disabled = false;
     document.getElementById("time").setAttribute("value", "TIME'S UP!");
