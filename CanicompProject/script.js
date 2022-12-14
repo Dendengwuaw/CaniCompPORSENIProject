@@ -111,15 +111,17 @@ function lastScore() {
     LS = score;
     let btn = document.getElementById("lastScored");
     btn.setAttribute("value", "Last Score : " + LS);
+
 }
 
 let HS;
 function highScore() {
     HS = +(window.name);
-    if(LS > HS || HS == "") {
-        window.name = LS
-        document.getElementById("highScored").setAttribute("value", "High Score : " + (LS));
+    if((LS > HS || HS.toString() == "NaN") && (+(LS)).toString() != "NaN") {
+        window.name = +(LS);
     }
+    document.getElementById("highScored").value = ("High Score : " + window.name.toString());
+    setInterval(highScore, 100)
 }
 
 if(score < 0) {
@@ -136,7 +138,6 @@ if(score < 0) {
     document.getElementById("mole7").disabled = true;
     document.getElementById("mole8").disabled = true;
     document.getElementById("mole9").disabled = true;
-    
     skor();
     document.getElementById("start").disabled = false;
     document.getElementById("time").setAttribute("value", "TIME'S UP!");
@@ -144,8 +145,8 @@ if(score < 0) {
 }
 
 if (counter < 0 ) {
-    highScore();
     lastScore();
+    highScore();
     document.getElementById("mole1").disabled = true;
     document.getElementById("mole2").disabled = true;
     document.getElementById("mole3").disabled = true;
@@ -211,6 +212,6 @@ function resetTextInputKeluarga(){
     }
 }
 
-function screenInitialize(){
-    document.getElementById("highScored").setAttribute("value", "High Score : " + +(window.name));
-}
+setInterval(() => {
+    
+}, interval);
