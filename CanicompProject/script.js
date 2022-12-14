@@ -113,21 +113,18 @@ function lastScore() {
     btn.setAttribute("value", "Last Score : " + LS);
 }
 
-let HS = parseFloat(window.name);
+let HS;
 function highScore() {
-    if(score > LS || LS == undefined || score > parseFloat(window.name)) {
-        window.name = score
-        
-        document.getElementById("highScored").setAttribute("value", "High Score : " + parseFloat(window.name));
-    }
-    else {
-        document.getElementById("highScored").setAttribute("value", "High Score : " + parseFloat(window.name));
+    HS = +(window.name);
+    if(LS > HS || HS == "") {
+        window.name = LS
+        document.getElementById("highScored").setAttribute("value", "High Score : " + (LS));
     }
 }
 
 if(score < 0) {
-    highScore();
     lastScore();
+    highScore();
     score = 0;
     mole("dirt.png");
     document.getElementById("mole1").disabled = true;
@@ -212,4 +209,8 @@ function resetTextInputKeluarga(){
     else {
         document.getElementById("lainnyaKeluarga").checked = false;
     }
+}
+
+function screenInitialize(){
+    document.getElementById("highScored").setAttribute("value", "High Score : " + +(window.name));
 }
