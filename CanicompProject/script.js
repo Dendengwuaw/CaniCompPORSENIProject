@@ -14,6 +14,7 @@ function startButton() {
     mole("mole.png");
     startCountdown(10); //nanti ganti jd 60
     document.getElementById("start").disabled = true;
+    highScore();
     score = 0;
 }
 let counter;
@@ -121,8 +122,8 @@ function highScore() {
         window.name = +(LS);
     }
     document.getElementById("highScored").value = ("High Score : " + window.name.toString());
-    setInterval(highScore, 100)
 }
+
 
 if(score < 0) {
     lastScore();
